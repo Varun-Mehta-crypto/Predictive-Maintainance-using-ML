@@ -2,8 +2,8 @@ from flask import Flask, redirect, render_template, request,make_response,json
 from flask_sqlalchemy import  SQLAlchemy
 import random  
 app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI']="mysql+pymysql://root:code123@localhost/customer"
-app.config['SQLALCHEMY_DATABASE_URI']="sqlite:///test.db"
+app.config['SQLALCHEMY_DATABASE_URI']="mysql+pymysql://root:code123@localhost/customer"
+#app.config['SQLALCHEMY_DATABASE_URI']="sqlite:///test.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 db=SQLAlchemy(app)
 
